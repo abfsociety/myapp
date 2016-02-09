@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
@@ -26,13 +26,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-group :development, :test do
-  gem 'sqlite3'
-end
 
-group :production do
-  gem 'pg'
-end
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
